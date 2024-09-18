@@ -1,4 +1,6 @@
-export const inverters = [
+import { Inverter } from "../types/types";
+
+export const inverters: Inverter[] = [
     { indice: 1, preco: 7234.47, potencia: 3000, quantosInversores: 0, precoTotal: 0, rendimentoMaximoInversor: 0.979 },
     { indice: 2, preco: 7829.47, potencia: 4000, quantosInversores: 0, precoTotal: 0, rendimentoMaximoInversor: 0.980 },
     { indice: 3, preco: 11893.47, potencia: 8200, quantosInversores: 0, precoTotal: 0, rendimentoMaximoInversor: 0.981 },

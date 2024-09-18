@@ -1,4 +1,6 @@
-export const solarPanels = [
+import { SolarPanel } from "../types/types";
+
+export const solarPanels: SolarPanel[] = [
     {
       nome: "Painel Solar 305W Monocristalino Canadian Solar - CS6K-305M",
       potencia: 305,
