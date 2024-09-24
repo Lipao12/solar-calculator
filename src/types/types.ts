@@ -1,10 +1,12 @@
 export type Inverter = {
-    indice: number; 
-    preco: number; 
-    qtd: number | null;
-    potencia: number; 
-    precoTotal: number; 
-    rendimentoMaximoInversor: number; 
+  Nome: string;
+  Marca: string;
+  Potencia: number;
+  Preco: number;
+  RendimentoMaximo: number;
+  QuantosInversores: number;
+  PrecoTotal: number;
+  ID: number;
   };
 
 export type SolarPanel = {
