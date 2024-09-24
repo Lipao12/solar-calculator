@@ -1,25 +1,214 @@
 import { Inverter } from "../types/types";
 
 export const inverters: Inverter[] = [
-    { indice: 1, qtd: null, preco: 7234.47, potencia: 3000, precoTotal: 0, rendimentoMaximoInversor: 0.979 },
-    { indice: 2, qtd: null, preco: 7829.47, potencia: 4000, precoTotal: 0, rendimentoMaximoInversor: 0.980 },
-    { indice: 3, qtd: null, preco: 11893.47, potencia: 8200, precoTotal: 0, rendimentoMaximoInversor: 0.981 },
-    { indice: 4, qtd: null, preco: 4928.07, potencia: 4000, precoTotal: 0, rendimentoMaximoInversor: 0.974 },
-    { indice: 5, qtd: null, preco: 1421.00, potencia: 1000, precoTotal: 0, rendimentoMaximoInversor: 0.900 },
-    { indice: 6, qtd: null, preco: 6304.47, potencia: 5700, precoTotal: 0, rendimentoMaximoInversor: 0.980 },
-    { indice: 7, qtd: null, preco: 17324.97, potencia: 15000, precoTotal: 0, rendimentoMaximoInversor: 0.977 },
-    { indice: 8, qtd: null, preco: 10303.47, potencia: 6000, precoTotal: 0, rendimentoMaximoInversor: 0.978 },
-    { indice: 9, qtd: null, preco: 20059.17, potencia: 25000, precoTotal: 0, rendimentoMaximoInversor: 0.982 },
-    { indice: 10, qtd: null, preco: 21370.47, potencia: 27000, precoTotal: 0, rendimentoMaximoInversor: 0.983 },
-    { indice: 11, qtd: null, preco: 3644.47, potencia: 1200, precoTotal: 0, rendimentoMaximoInversor: 0.965 },
-    { indice: 12, qtd: null, preco: 15464.97, potencia: 15000, precoTotal: 0, rendimentoMaximoInversor: 0.970 },
-    { indice: 13, qtd: null, preco: 18673.97, potencia: 20000, precoTotal: 0, rendimentoMaximoInversor: 0.970 },
-    { indice: 14, qtd: null, preco: 24932.97, potencia: 30000, precoTotal: 0, rendimentoMaximoInversor: 0.970 },
-    { indice: 15, qtd: null, preco: 17464.97, potencia: 12000, precoTotal: 0, rendimentoMaximoInversor: 0.970 },
-    { indice: 16, qtd: null, preco: 21017.07, potencia: 27000, precoTotal: 0, rendimentoMaximoInversor: 0.983 },
-    { indice: 17, qtd: null, preco: 4704.87, potencia: 5000, precoTotal: 0, rendimentoMaximoInversor: 0.981 },
-    { indice: 18, qtd: null, preco: 3440.07, potencia: 3000, precoTotal: 0, rendimentoMaximoInversor: 0.977 },
-    { indice: 19, qtd: null, preco: 4928.07, potencia: 3000, precoTotal: 0, rendimentoMaximoInversor: 0.977 },
-    { indice: 20, qtd: null, preco: 5114.97, potencia: 5000, precoTotal: 0, rendimentoMaximoInversor: 0.980 }
-  ];
-  
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID ECOSOLYS (56914-3)",
+    "Marca": "EcoSolys",
+    "Potencia": 1000,
+    "Preco": 1806.38,
+    "RendimentoMaximo": 0.950,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 0
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID GROWATT (68207-0)",
+    "Marca": "Growatt",
+    "Potencia": 1500,
+    "Preco": 1967.87,
+    "RendimentoMaximo": 0.972,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 1
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID GROWATT (68208-4)",
+    "Marca": "Growatt",
+    "Potencia": 2000,
+    "Preco": 2167.81,
+    "RendimentoMaximo": 0.972,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 2
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID ECOSOLYS (40867-2)",
+    "Marca": "EcoSolys",
+    "Potencia": 2000,
+    "Preco": 2267.78,
+    "RendimentoMaximo": 0.966,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 3
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID GROWATT (68210-5)",
+    "Marca": "Growatt",
+    "Potencia": 2500,
+    "Preco": 2367.75,
+    "RendimentoMaximo": 0.970,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 4
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID GROWATT (68211-9)",
+    "Marca": "Growatt",
+    "Potencia": 3000,
+    "Preco": 2567.69,
+    "RendimentoMaximo": 0.970,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 5
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID REFUSOL (57196-0)",
+    "Marca": "REFUsol",
+    "Potencia": 1600,
+    "Preco": 2613.83,
+    "RendimentoMaximo": 0.975,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 6
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID GROWATT (68202-0)",
+    "Marca": "Growatt",
+    "Potencia": 3000,
+    "Preco": 3067.54,
+    "RendimentoMaximo": 0.982,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 7
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID REFUSOL (57156-8)",
+    "Marca": "REFUsol",
+    "Potencia": 3300,
+    "Preco": 3152.13,
+    "RendimentoMaximo": 0.977,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 8
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID GROWATT (57555-2)",
+    "Marca": "Growatt",
+    "Potencia": 5000,
+    "Preco": 3683.51,
+    "RendimentoMaximo": 0.984,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 9
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID GROWATT (57561-9)",
+    "Marca": "Growatt",
+    "Potencia": 6000,
+    "Preco": 4359.46,
+    "RendimentoMaximo": 0.984,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 10
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID GROWATT (57562-3)",
+    "Marca": "Growatt",
+    "Potencia": 8000,
+    "Preco": 5189.98,
+    "RendimentoMaximo": 0.984,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 11
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID FIMER ABB (31472-8)",
+    "Marca": "ABB",
+    "Potencia": 3300,
+    "Preco": 6151.23,
+    "RendimentoMaximo": 0.970,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 12
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID REFUSOL (45943-7)",
+    "Marca": "REFUsol",
+    "Potencia": 5000,
+    "Preco": 5497.58,
+    "RendimentoMaximo": 0.978,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 13
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID FRONIUS (30579-7)",
+    "Marca": "Fronius",
+    "Potencia": 3000,
+    "Preco": 6297.34,
+    "RendimentoMaximo": 0.977,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 14
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID FIMER ABB (31473-2)",
+    "Marca": "ABB",
+    "Potencia": 4000,
+    "Preco": 6720.29,
+    "RendimentoMaximo": 0.970,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 15
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID FRONIUS (30582-2)",
+    "Marca": "Fronius",
+    "Potencia": 4000,
+    "Preco": 6966.37,
+    "RendimentoMaximo": 0.977,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 16
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID FIMER ABB (31476-4)",
+    "Marca": "ABB",
+    "Potencia": 5000,
+    "Preco": 7350.87,
+    "RendimentoMaximo": 0.974,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 17
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID FRONIUS (30437-5)",
+    "Marca": "Fronius",
+    "Potencia": 5000,
+    "Preco": 7666.16,
+    "RendimentoMaximo": 0.977,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 18
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID FIMER ABB (45315-4)",
+    "Marca": "ABB",
+    "Potencia": 6000,
+    "Preco": 8558.20,
+    "RendimentoMaximo": 0.974,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 19
+  },
+  {
+    "Nome": "INVERSOR SOLAR FOTOVOLTAICO ON GRID FRONIUS (31282-7)",
+    "Marca": "Fronius",
+    "Potencia": 6000,
+    "Preco": 9119.57,
+    "RendimentoMaximo": 0.977,
+    "QuantosInversores": 0,
+    "PrecoTotal": 0,
+    "ID": 20
+  }
+]

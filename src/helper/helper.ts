@@ -49,10 +49,10 @@ import { Inverter, SolarPanel } from "../types/types";
     WpGenerated = placaEscolhida.qtd * placaEscolhida.potencia;
 
     // Inicializar o primeiro inversor como o mais barato
-    numberInvertors = Math.ceil((0.8 * WpGenerated) / cheaperInvertor.potencia);
-    cheaperCost = numberInvertors * cheaperInvertor.preco;
-    cheaperInvertor.qtd = numberInvertors;
-    cheaperInvertor.precoTotal = cheaperCost;
+    numberInvertors = Math.ceil((0.8 * WpGenerated) / cheaperInvertor.Potencia);
+    cheaperCost = numberInvertors * cheaperInvertor.Preco;
+    cheaperInvertor.QuantosInversores = numberInvertors;
+    cheaperInvertor.PrecoTotal = cheaperCost;
 
     // Verifica se o usuário escolheu o primeiro inversor
     if (idInversorEscolhido === cont) {
@@ -65,11 +65,11 @@ import { Inverter, SolarPanel } from "../types/types";
       currentInvertor = inverters[i];
 
       numberInvertors = Math.ceil(
-        (0.8 * WpGenerated) / currentInvertor.potencia
+        (0.8 * WpGenerated) / currentInvertor.Potencia
       );
-      currentCost = numberInvertors * currentInvertor.preco;
-      currentInvertor.qtd = numberInvertors;
-      currentInvertor.precoTotal = currentCost;
+      currentCost = numberInvertors * currentInvertor.Preco;
+      currentInvertor.QuantosInversores = numberInvertors;
+      currentInvertor.PrecoTotal = currentCost;
 
       // Se o usuário escolheu o inversor atual, retorná-lo
       if (idInversorEscolhido === cont) {

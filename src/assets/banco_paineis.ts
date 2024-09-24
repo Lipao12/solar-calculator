@@ -90,6 +90,16 @@ export const solarPanels: SolarPanel[] = [
       custoTotal: null,
       coefTempPot: -0.37,
       noct: 45
+    },
+    {
+      nome: "Painel Solar Fotovoltaico 330W - OSDA - ODA330-36-P",
+      potencia: 330,
+      preco: 696.57,
+      area: 1.940352,
+      qtd: null,
+      custoTotal: null,
+      coefTempPot: -0.4,
+      noct: 45
     }
   ];
   
