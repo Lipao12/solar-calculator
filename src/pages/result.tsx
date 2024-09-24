@@ -64,11 +64,12 @@ export const Result = () => {
           </p>
           <Divider w="w-full" mb="mb-2" />
           <p className="mb-4">
-            Lucro estimado: <strong>R${result.lucro.toFixed(2)}</strong>
+            Economia anual: <strong>R${result.economiaAnual.toFixed(2)}</strong>
           </p>
           <Divider w="w-full" mb="mb-2" />
           <p className="mb-4">
-            Economia anual: <strong>R${result.economiaAnual.toFixed(2)}</strong>
+            Consumo em Reais:{" "}
+            <strong>R${result.consumoReais.toFixed(2)}</strong>
           </p>
         </div>
       ) : (

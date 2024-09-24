@@ -20,9 +20,9 @@ interface CalculatorContextProps {
     tempoRetorno: number;
     economiaAnual: number;
     valorEconomiaTotal: number;
-    lucro: number;
     consumo: number;
     area: number;
+    consumoReais: number;
   } | null;
   handleSetCity: (newCity: string) => void;
   handleSetConsumption: (newConsumption: string) => void;
@@ -37,25 +37,10 @@ const CalculatorContext = createContext<CalculatorContextProps | undefined>(
 const CalculatorProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
-  const [choosenSolarPanel, setSolarPanel] = useState<SolarPanel | null>(null);
-  const [choosenInvertor, setInvertor] = useState<Inverter | null>(null);
   const [calcByMoney, setCalcByMoney] = useState<boolean>(false);
   const [city, setCity] = useState<string>("");
-  const [idModuloEscolhido, setIdModuloEscolhido] = useState(-1);
-  const [idInversorEscolhido, setIdInversorEscolhido] = useState(-1);
-  const [area, setArea] = useState(0);
-  const [custoParcial, setCustoParcial] = useState(0);
-  const [custoTotal, setCustoTotal] = useState(0);
-  const [geracaoAnual, setGeracaoAnual] = useState(0);
-  const [lucro, setLucro] = useState(0);
   const [potenciaInstalada, setPotenciaInstalada] = useState<number>(0);
-  const [potenciaNecessaria, setPotenciaNecessaria] = useState<number>(0);
   const [consumption, setConsumption] = useState<number>(0);
-  const [consumptionkWh, setConsumptionkWh] = useState<number>(0);
-  const [consumptionReais, setConsumptionReais] = useState<number>(0);
-  const [economiaAnual, setEconomiaAnual] = useState<number>(0);
-  const [valorEconomiaTotal, setValorEconomiaTotal] = useState<number>(0);
-  const [payback, setPayback] = useState<number>(0);
   const [showModal, setShowModal] = useState<boolean>(false);
   const [result, setResult] = useState<{
     panels: SolarPanel;
@@ -68,9 +53,9 @@ const CalculatorProvider: React.FC<{ children: ReactNode }> = ({
     tempoRetorno: number;
     economiaAnual: number;
     valorEconomiaTotal: number;
-    lucro: number;
     consumo: number;
     area: number;
+    consumoReais: number;
   } | null>(null);
 
   const custoDisponibilidade = 50.0; // vitoria ES
@@ -88,14 +73,6 @@ const CalculatorProvider: React.FC<{ children: ReactNode }> = ({
   const iCOSTS_TOTAL = 1;
 
   const horasDeSolPlenoCidade = 4.85; // kWh/m^2dia
-
-  // Função para calcular a potência instalada
-  const calculatePotenciaInstalada = (
-    nPaineis: number,
-    potenciaPainel: number
-  ) => {
-    return nPaineis * potenciaPainel;
-  };
 
   // Função para calcular o tempo de retorno
   const calculateTempoRetorno = (custoTotal: number, economiaAnual: number) => {
@@ -161,8 +138,8 @@ const CalculatorProvider: React.FC<{ children: ReactNode }> = ({
         economiaAnual: economy.anualEconomy,
         geracaoAnual: anualGeneration,
         payback: economy.payback,
-        lucro: lucro,
         tempoRetorno: returnTime,
+        consumoReais: consumoReais,
       });
     } catch (error) {
       console.error("Erro no cálculo:", error);
@@ -197,10 +174,6 @@ const CalculatorProvider: React.FC<{ children: ReactNode }> = ({
       totalEconomy: totalEconomy,
       payback: payback,
     };
-    // Armazenar os valores calculados para exibir ou utilizar em relatórios
-    setEconomiaAnual(geracaoAnual * tarifaEnergia);
-    setValorEconomiaTotal(valorEconomiaTotal);
-    setPayback(payback);
   };
 
   /*
