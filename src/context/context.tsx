@@ -131,10 +131,9 @@ const CalculatorProvider: React.FC<{ children: ReactNode }> = ({
       inversor = DefineInvertor(modulo, bestIdInverter, inverters);
       //modulo = DefineSolarPanel(potNecessaria, -1, 8, solarPanels);
       //inversor = DefineInvertor(modulo, 0, inverters);
+      const costs = DefineCosts(modulo, inversor);
 
       let area1 = DefineArea(modulo);
-
-      const costs = DefineCosts(modulo, inversor);
 
       const anualGeneration = EstimateAnualGeneration(modulo, inversor);
 
