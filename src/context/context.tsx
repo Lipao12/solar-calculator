@@ -108,8 +108,29 @@ const CalculatorProvider: React.FC<{ children: ReactNode }> = ({
 
       console.log(potNecessaria);
 
-      modulo = DefineSolarPanel(potNecessaria, -1, 8, solarPanels);
-      inversor = DefineInvertor(modulo, 0, inverters);
+      let bestIdModulo: number = 0;
+      let bestIdInverter: number = 0;
+      let bestCost: number = Infinity;
+      solarPanels.forEach((panel, i) => {
+        const modulo = DefineSolarPanel(potNecessaria, -1, i, solarPanels);
+
+        inverters.forEach((inverter, j) => {
+          const inversor = DefineInvertor(modulo, 0, inverters);
+          const costs = DefineCosts(modulo, inversor);
+
+          if (costs[iCOSTS_PARCIAL] < bestCost) {
+            bestCost = costs[iCOSTS_PARCIAL];
+            bestIdModulo = i;
+            bestIdInverter = j;
+          }
+        });
+      });
+
+      console.log("Melhor módulo e inversor:", bestIdModulo, bestIdInverter);
+      modulo = DefineSolarPanel(potNecessaria, -1, bestIdModulo, solarPanels);
+      inversor = DefineInvertor(modulo, bestIdInverter, inverters);
+      //modulo = DefineSolarPanel(potNecessaria, -1, 8, solarPanels);
+      //inversor = DefineInvertor(modulo, 0, inverters);
 
       let area1 = DefineArea(modulo);
 
